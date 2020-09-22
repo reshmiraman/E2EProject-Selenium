@@ -1,0 +1,8 @@
+07:54:52.979 [TestNG] INFO  Academy.ValidateTitle - Navigated to Home Page
+07:54:58.732 [TestNG] INFO  Academy.HomePage - User Login
+07:55:03.983 [TestNG] INFO  Academy.HomePage - User Login
+14:43:00.212 [main] INFO  Academy.HomePage - Driver is initialised
+14:43:08.138 [main] INFO  Academy.HomePage - User Login
+14:43:11.638 [main] INFO  Academy.HomePage - User Login
+14:45:53.669 [main] INFO  Academy.HomePage - Driver is initialised
+14:50:41.885 [main] INFO  Academy.ValidateTitle - Driver is initialised

@@ -1,0 +1,19 @@
+# Created at 2020-05-12T07:56:56.078
+Boot Manifest-JAR contains absolute paths in classpath 'D:\reshmi\work\eclipse-workspace\E2EProject\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
+# Created at 2020-05-12T07:56:56.308
+WARNING: An illegal reflective access operation has occurred
+
+# Created at 2020-05-12T07:56:56.308
+WARNING: Illegal reflective access by org.testng.xml.XMLParser (file:/C:/Users/prade/.m2/repository/org/testng/testng/6.7/testng-6.7.jar) to constructor com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl()
+
+# Created at 2020-05-12T07:56:56.309
+WARNING: Please consider reporting this to the maintainers of org.testng.xml.XMLParser
+
+# Created at 2020-05-12T07:56:56.313
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created at 2020-05-12T07:56:56.313
+WARNING: All illegal access operations will be denied in a future release
+

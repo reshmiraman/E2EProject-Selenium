@@ -1,0 +1,9 @@
+19:43:09.913 [main] INFO  Academy.ValidateTitle - Driver is initialised
+19:43:12.366 [main] INFO  Academy.ValidateTitle - Navigated to Home Page
+19:43:12.390 [main] INFO  Academy.ValidateTitle - Successfully validated text message
+19:43:14.513 [main] INFO  Academy.HomePage - Driver is initialised
+19:43:19.406 [main] INFO  Academy.HomePage - User Login
+19:43:22.284 [main] INFO  Academy.HomePage - User Login
+07:54:49.226 [TestNG] INFO  Academy.ValidateTitle - Driver is initialised
+07:54:49.254 [TestNG] INFO  Academy.HomePage - Driver is initialised
+07:54:49.254 [TestNG] INFO  Academy.HomePage - Driver is initialised
