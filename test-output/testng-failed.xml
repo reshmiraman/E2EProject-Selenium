@@ -3,13 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="Academy.ValidateTitle">
+      <class name="academy.tests.HomePageTest">
         <methods>
-          <include name="basePageNavigation"/>
-          <include name="initialize"/>
           <include name="tearDown"/>
+          <include name="baseNavigation" invocation-numbers="0 1"/>
+          <include name="initialize"/>
         </methods>
-      </class> <!-- Academy.ValidateTitle -->
+      </class> <!-- academy.tests.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

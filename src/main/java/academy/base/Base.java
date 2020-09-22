@@ -1,8 +1,7 @@
-package resources;
+package academy.base;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -14,44 +13,39 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Base {
-	
-	public WebDriver  driver;
+
+	public WebDriver driver;
 	public Properties prop;
-	
+
 	public WebDriver initializeDriver() throws IOException
-	
 	{
+		// Load the Properties
 		prop = new Properties();
-		FileInputStream fis = new FileInputStream("D:\\reshmi\\work\\eclipse-workspace\\E2EProject\\src\\main\\java\\resources\\data.properties");
+		FileInputStream fis = new FileInputStream(
+				"D:\\reshmi\\work\\eclipse-workspace\\E2EProject\\src\\main\\java\\academy\\resources\\data.properties");
 		prop.load(fis);
-		
+
 		String browserName = prop.getProperty("browser");
-		
-		if(browserName.equals("chrome"))
-		{
-			System.setProperty("webdriver.chrome.driver", "D:\\reshmi\\work\\chromedriver_win32\\chromedriver.exe");
+		String chromeDriver = prop.getProperty("chrome_driver");
+
+		if (browserName.equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver",chromeDriver);
 			driver = new ChromeDriver();
+		} else if (browserName.equals("firefox")) {
+			/*
+			 * Get Firefox driver
+			 */
 		}
-		else if (browserName.equals("chrome"))
-		{
-			
-		}
-		else
-		{
-			
-		}
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		return driver;
 	}
-	
-	public void getScreenShotpath(String testCaseName,WebDriver driver) throws IOException
-	{
+
+	public void getScreenShotpath(String testCaseName, WebDriver driver) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
+		String destinationFile = System.getProperty("user.dir") + "\\reports\\" + testCaseName + ".png";
 		FileUtils.copyFile(source, new File(destinationFile));
-		
 	}
 
 }
